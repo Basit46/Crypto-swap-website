@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .step li {
+    @apply text-[#637592];
+  }
+
+  .modal-bg {
+    @apply fixed top-[80px] left-0 w-full h-full bg-[red] bg-[#191D24A3] backdrop-blur-[8px] flex justify-center pt-[30px];
+  }
+  .modal-bg > div {
+    @apply w-[90%] md:w-[556px] p-[20px] vsm:p-[40px];
+  }
+}
+
+body {
+  background: #080a0c;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
